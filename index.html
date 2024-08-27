@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon, enlace style y titulo-->
+    <link rel="icon" type="image/icon" href="./Imagenes/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <title>Encriptador de Texto</title>
+</head>
+
+<body>
+    <!--Encabezado-->
+    <header>
+        <a href="https://www.aluracursos.com/" rel="estudio" target="_blank">
+            <img src="./Imagenes/Logo.svg" alt="Logo Alura" class="imagen-logo">
+        </a>
+        <abbr title="Podras encriptar y desencriptar cualquier tipo de frase u oracion, teniendo presente los avisos. Feliz Dia :)" class="indicacion">Encriptador de Texto</abbr>
+    </header>
+
+    <!--Principal-->
+    <main>
+        <!--Texto a encriptar/desencriptar, aviso y botones-->
+        <section class="encriptador-general">
+            <textarea class="encriptador-texto" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="encriptador-aviso">
+                <img src="./Imagenes/Group.svg" alt="Imagen Aviso" class="imagen-aviso">
+                <p class="texto-aviso">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="encriptador-botones">
+                <button type="submit" class="btn-encriptar">Encriptar!</button>
+                <button type="submit" class="btn-desencriptar">Desencriptar!</button>
+            </div>
+        </section>
+        <!--Resultados, Texto de guia y boton de copiar-->
+        <section class="resultado-general">
+            <div class="marco-resultado">
+                <img src="./Imagenes/Muñeco.svg" alt="Imagen Muñeco" class="imagen-muñeco">
+                <p class="texto-uno">Ningún mensaje fue encontrado</p>
+                <p class="texto-dos">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <textarea type="mensaje" class="texto-resultado" readonly></textarea>
+            <button type="submit" class="btn-copiar">Copiar</button>
+        </section>
+    </main>
+
+    <!--Pie de página-->
+    <footer>
+        <p class="Agradecimientos">Desarrollado por Kalvini1100 en colaboracion con Alura Latam y Oracle - 2024</p>
+        <a href="https://www.linkedin.com/in/diego-fernando-saenz-mora/" rel="iconsocial" target="_blank">
+            <img src="./Imagenes/linkedin.svg" alt="Logo LinkedIn" class="imagen-linkedin">
+        </a>
+        <a href="https://github.com/kalvini1100" rel="iconsocial" target="_blank">
+            <img src="./Imagenes/github.svg" alt="Logo Github" class="imagen-github">
+        </a>
+    </footer>
+
+    <!--Enlace Script-->
+<script src="./script.js"></script>    
+</body>
+</html>
